@@ -1,0 +1,35 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Hierarchical vs Network vs Relational Models" id="Q5">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1924" pageHeight="431" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+<mxCell id="1" parent="0" />
+<mxCell id="n0" value="Data Models" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" vertex="1" parent="1"><mxGeometry x="854.3" y="40.0" width="126.8" height="55.0" as="geometry" /></mxCell>
+<mxCell id="n1" value="Hierarchical Model" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="306.6" y="186.7" width="171.1" height="55.0" as="geometry" /></mxCell>
+<mxCell id="n2" value="Tree structure" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1"><mxGeometry x="40.0" y="334.9" width="136.0" height="55.0" as="geometry" /></mxCell>
+<mxCell id="n3" value="Parent-Child&#10;(1:N only)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1"><mxGeometry x="231.0" y="333.3" width="126.8" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n4" value="Fast navigation,&#10;rigid structure" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1"><mxGeometry x="413.5" y="333.3" width="149.7" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n5" value="Network Model" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="845.1" y="186.7" width="145.1" height="55.0" as="geometry" /></mxCell>
+<mxCell id="n6" value="Graph structure" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1"><mxGeometry x="618.3" y="334.9" width="149.7" height="55.0" as="geometry" /></mxCell>
+<mxCell id="n7" value="Owner-Member Sets&#10;(supports M:N)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1"><mxGeometry x="823.8" y="333.3" width="187.9" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n8" value="Flexible but&#10;complex navigation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1067.4" y="333.3" width="174.2" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n9" value="Relational Model" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1408.9" y="186.7" width="157.4" height="55.0" as="geometry" /></mxCell>
+<mxCell id="n10" value="Tables&#10;(rows &amp; columns)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1297.4" y="333.3" width="163.5" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n11" value="Keys&#10;(Primary/Foreign)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1515.9" y="333.3" width="163.5" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n12" value="SQL, set-based&#10;operations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1735.0" y="333.3" width="149.7" height="58.1" as="geometry" /></mxCell>
+<mxCell id="e0" value="type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n0" target="n1"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e1" value="type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n0" target="n5"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e2" value="type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n0" target="n9"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e3" value="uses" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n1" target="n2"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e4" value="uses" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n1" target="n3"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e5" value="property" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n1" target="n4"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e6" value="uses" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n5" target="n6"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e7" value="uses" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n5" target="n7"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e8" value="property" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n5" target="n8"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e9" value="uses" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n9" target="n10"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e10" value="uses" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n9" target="n11"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e11" value="property" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n9" target="n12"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

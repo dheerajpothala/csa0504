@@ -1,0 +1,23 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ANSI/SPARC Three-Level Architecture" id="Q2">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="382" pageHeight="914" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+<mxCell id="1" parent="0" />
+<mxCell id="n0" value="External Level&#10;(User Views)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" vertex="1" parent="1"><mxGeometry x="56.8" y="40.0" width="139.0" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n1" value="Conceptual Level&#10;(Logical Schema)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="44.6" y="354.7" width="163.5" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n2" value="Internal Level&#10;(Physical Schema)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="40.0" y="669.4" width="172.6" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n3" value="Logical Data&#10;Independence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="203.5" y="189.7" width="139.0" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n4" value="Physical Data&#10;Independence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="203.5" y="504.4" width="139.0" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n5" value="Physical Database" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1"><mxGeometry x="40.8" y="819.2" width="171.1" height="55.0" as="geometry" /></mxCell>
+<mxCell id="e0" value="mapped to" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n0" target="n1"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e1" value="mapped to" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n1" target="n2"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e2" value="stored as" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n2" target="n5"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e3" value="protected by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n0" target="n3"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e4" value="conceptual can change without affecting" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n3" target="n1"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e5" value="protected by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n1" target="n4"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e6" value="internal can change without affecting" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n4" target="n2"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

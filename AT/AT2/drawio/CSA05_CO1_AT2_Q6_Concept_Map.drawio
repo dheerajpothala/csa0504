@@ -1,0 +1,25 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="EER Model Extending the ER Model" id="Q6">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="756" pageHeight="605" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+<mxCell id="1" parent="0" />
+<mxCell id="n0" value="ER Model&#10;(basic)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" vertex="1" parent="1"><mxGeometry x="329.5" y="40.0" width="108.5" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n1" value="EER Model&#10;(Enhanced ER)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="308.9" y="189.7" width="149.7" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n2" value="Generalization&#10;(bottom-up)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="93.5" y="339.4" width="140.6" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n3" value="Specialization&#10;(top-down)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="315.8" y="339.4" width="136.0" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n4" value="Aggregation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="535.8" y="341.0" width="123.8" height="55.0" as="geometry" /></mxCell>
+<mxCell id="n5" value="Combines lower-level&#10;entities into a&#10;higher-level entity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1"><mxGeometry x="40.0" y="489.2" width="192.5" height="76.4" as="geometry" /></mxCell>
+<mxCell id="n6" value="Divides a higher-level&#10;entity into&#10;sub-entities" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1"><mxGeometry x="288.3" y="489.2" width="191.0" height="76.4" as="geometry" /></mxCell>
+<mxCell id="n7" value="Treats a relationship&#10;as a higher-level&#10;entity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1"><mxGeometry x="534.2" y="489.2" width="181.8" height="76.4" as="geometry" /></mxCell>
+<mxCell id="e0" value="extended by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n0" target="n1"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e1" value="introduces" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n1" target="n2"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e2" value="introduces" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n1" target="n3"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e3" value="introduces" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n1" target="n4"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e4" value="means" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n2" target="n5"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e5" value="means" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n3" target="n6"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e6" value="means" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n4" target="n7"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

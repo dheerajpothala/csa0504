@@ -1,0 +1,26 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="DBMS Core Terminology" id="Q1">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="468" pageHeight="874" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+<mxCell id="1" parent="0" />
+<mxCell id="n0" value="DBMS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" vertex="1" parent="1"><mxGeometry x="176.0" y="40.0" width="84.0" height="55.0" as="geometry" /></mxCell>
+<mxCell id="n1" value="Data Model" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="74.4" y="188.2" width="119.2" height="55.0" as="geometry" /></mxCell>
+<mxCell id="n2" value="Schema&#10;(Structure)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="260.8" y="186.7" width="113.1" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n3" value="Instance&#10;(Data at a point in time)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="221.8" y="336.4" width="206.2" height="58.1" as="geometry" /></mxCell>
+<mxCell id="n4" value="ER Diagram" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="40.0" y="337.9" width="126.8" height="55.0" as="geometry" /></mxCell>
+<mxCell id="n5" value="Entity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="62.2" y="632.8" width="82.5" height="55.0" as="geometry" /></mxCell>
+<mxCell id="n6" value="Attribute" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=11;" vertex="1" parent="1"><mxGeometry x="55.3" y="779.4" width="96.2" height="55.0" as="geometry" /></mxCell>
+<mxCell id="n7" value="Relationship" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=11;" vertex="1" parent="1"><mxGeometry x="178.3" y="486.1" width="125.3" height="55.0" as="geometry" /></mxCell>
+<mxCell id="e0" value="is based on" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n0" target="n1"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e1" value="is defined by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n0" target="n2"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e2" value="is populated as" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n2" target="n3"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e3" value="represented using" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n1" target="n4"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e4" value="consists of" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n4" target="n5"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e5" value="consists of" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n4" target="n7"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e6" value="described by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n5" target="n6"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="e7" value="connects" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=9;strokeColor=#666666;fontColor=#333333;" edge="1" parent="1" source="n7" target="n5"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
