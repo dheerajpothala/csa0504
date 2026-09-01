@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CSA0504 — Exam Certification &amp; Slot-Booking Console</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="shell">
+    <nav class="rail">
+      <div class="rail-brand">
+        <span class="rail-brand-mark">NC</span>
+        <span class="rail-brand-text">CSA0504</span>
+      </div>
+      <button class="rail-item active" data-module="lookup">
+        <span class="rail-icon">◎</span> Candidate Lookup
+      </button>
+      <button class="rail-item" data-module="audit">
+        <span class="rail-icon">▤</span> Center Audit
+      </button>
+      <button class="rail-item" data-module="booking">
+        <span class="rail-icon">▣</span> Slot Booking
+      </button>
+      <button class="rail-item" data-module="results">
+        <span class="rail-icon">✓</span> Result Publishing
+      </button>
+      <button class="rail-item" data-module="concurrency">
+        <span class="rail-icon">⇄</span> Concurrency Lab
+      </button>
+      <div class="rail-footer">
+        <div class="rail-footer-label">Faculty</div>
+        <div class="rail-footer-value">Dr. R. Kesavan</div>
+      </div>
+    </nav>
+
+    <main class="stage">
+      <header class="stage-header">
+        <h1 id="module-title">Candidate Lookup</h1>
+        <p id="module-sub" class="stage-sub">Point lookup via the MEMORY-engine hash index (candidate_latest_attempt).</p>
+      </header>
+
+      <section class="panel" id="panel-lookup">
+        <div class="field-row">
+          <label>Candidate ID</label>
+          <input type="number" id="lookup-candidate" value="1002345" />
+          <button class="btn btn-primary" id="btn-lookup">Look up</button>
+        </div>
+        <div class="result-card" id="lookup-result">Run a lookup to see the matched attempt.</div>
+      </section>
+
+      <section class="panel hidden" id="panel-audit">
+        <div class="field-row">
+          <label>Center ID</label>
+          <input type="number" id="audit-center" value="45" />
+          <label>Exam Date</label>
+          <input type="text" id="audit-date" value="2026-08-20" />
+          <button class="btn btn-primary" id="btn-audit">Run audit</button>
+        </div>
+        <div class="result-card" id="audit-result">Run an audit query to see matching attempts.</div>
+      </section>
+
+      <section class="panel hidden" id="panel-booking">
+        <div class="field-row">
+          <label>Candidate ID</label>
+          <input type="number" id="book-candidate" value="1002348" />
+          <label>Slot ID</label>
+          <input type="number" id="book-slot" value="1" />
+          <button class="btn btn-primary" id="btn-book">Book slot</button>
+          <button class="btn btn-ghost" id="btn-reset-1">Reset demo data</button>
+        </div>
+        <div class="result-card" id="book-result">Book a slot to see the transaction outcome.</div>
+        <div class="slots-table" id="slots-table"></div>
+      </section>
+
+      <section class="panel hidden" id="panel-results">
+        <div class="field-row">
+          <label>Result ID</label>
+          <input type="number" id="res-id" value="1" />
+          <label>Expected version</label>
+          <input type="number" id="res-version" value="0" />
+          <label>New score</label>
+          <input type="number" id="res-score" value="88.5" step="0.5" />
+          <button class="btn btn-primary" id="btn-update-result">Publish result</button>
+        </div>
+        <div class="result-card" id="result-update-result">Publish a result to see the version check.</div>
+        <div class="slots-table" id="results-table"></div>
+      </section>
+
+      <section class="panel hidden" id="panel-concurrency">
+        <h3>Two candidates book the last seat at once</h3>
+        <div class="field-row">
+          <label>Slot ID</label>
+          <input type="number" id="conc-slot" value="1" />
+          <label>Candidate A</label>
+          <input type="number" id="conc-cand-a" value="1002348" />
+          <label>Candidate B</label>
+          <input type="number" id="conc-cand-b" value="1002349" />
+          <button class="btn btn-primary" id="btn-conc-book">Run concurrent booking</button>
+        </div>
+        <div class="result-card" id="conc-book-result">Trigger the race to see which booking wins.</div>
+
+        <h3>Two examiners update the same result at once</h3>
+        <div class="field-row">
+          <label>Result ID</label>
+          <input type="number" id="conc-result-id" value="1" />
+          <button class="btn btn-primary" id="btn-conc-result">Run concurrent update</button>
+          <button class="btn btn-ghost" id="btn-reset-2">Reset demo data</button>
+        </div>
+        <div class="result-card" id="conc-result-result">Trigger the race to see the version conflict.</div>
+      </section>
+    </main>
+
+    <aside class="console">
+      <div class="console-header">
+        <span>Trace — under the hood</span>
+        <button class="console-clear" id="btn-clear-console">clear</button>
+      </div>
+      <pre class="console-body" id="console-body">// waiting for the first action…</pre>
+    </aside>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

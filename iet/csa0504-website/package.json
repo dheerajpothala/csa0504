@@ -1,0 +1,10 @@
+{
+  "name": "csa0504-exam-demo",
+  "version": "1.0.0",
+  "description": "Local demo console for the CSA0504 exam certification & slot-booking DBMS assignment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT"
+}
